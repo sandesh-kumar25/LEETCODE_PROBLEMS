@@ -4,8 +4,8 @@ public:
         int n=nums.size();
         int left,sum=0;
         int a=INT_MAX;
-        for(int right=0;right<n;right++){
-            sum+=nums[right];
+        for(int right=0; right<n; right++){
+            sum += nums[right];
             while(sum>=target){
                 a=min(a,right-left+1);
 
